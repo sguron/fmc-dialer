@@ -2,9 +2,9 @@
 FMC DIALER
 ==========
 
-FMC Dialer is a cross platform voip dialer written in python released under GPL v3 license. It uses the PJSIP library via python bindings for handling sip signaling and uses wxwidgets for drawing the user interface.
+FMC Dialer is a cross platform voip dialer written in python released under GPL v3 license. It uses PJSIP library via its python bindings for handling sip signaling and uses wxwidgets for drawing the user interface.
 
-This is a dialer project that I created for one of my client a while back. The company and domain has long since disappeared. I am hopeful that this code could be useful to someone else.
+I wrote this code a while back for one of my clients who has long since disappeared. I hold all rights to the source. I am releasing the codebase with the hope that it could be useful to someone else.
 
 Parts
 ======
@@ -26,6 +26,7 @@ Dial pad
 ![Dialpad](/docs/dial.jpg?raw=true)
 
 Earn credits
+
 ![Earn credits](/docs/freecredits.jpg?raw=true)
 
 License
