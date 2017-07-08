@@ -1,0 +1,33 @@
+﻿New phone state: Connecting...
+Acount resolver started..........................................................
+New phone state: Ready
+Making a pstn call
+New phone state: Connecting call
+Registration: Active= 1 Status= 200 Reason= OK Expires= 295
+Calling=sip:5000@test.localhost
+New phone state: Connecting call
+Unhandled exception in thread started by <function _worker_thread_main at 0x029AC3B0>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2934, in _worker_thread_main
+    time.sleep(0.050)
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2923, in _cb_on_mwi_info
+    _lib._cb_on_mwi_info(acc_id, body)
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2866, in _cb_on_mwi_info
+    if acc:
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2903, in _cb_on_reg_state
+    _lib._cb_on_reg_state(acc_id)
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2746, in _cb_on_reg_state
+    acc._cb.on_reg_state()
+  File "C:\work\projects\fmcv2\dialer\python\softphone.py", line 25, in on_reg_state
+    return self.sipphone.callback_onRegState(self.account)
+  File "C:\work\projects\fmcv2\dialer\python\softphone.py", line 323, in callback_onRegState
+    self.sipDoCall()
+  File "C:\work\projects\fmcv2\dialer\python\softphone.py", line 375, in sipDoCall
+    self.call = self.account.make_call(dial_uri, cb=callcallback)
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 1279, in make_call
+    self._lib()._err_check("make_call()", self, err)
+  File "C:\Program Files (x86)\python27\lib\site-packages\pjsua.py", line 2706, in _err_check
+    raise Error(op_name, obj, err_code, err_msg)
+pjsua.Error: Object: {Account test.freemycall.com <sip:1002@test.localhost>}, operation=make_call(), error=Received
+ no response from STUN server (PJLIB_UTIL_ESTUNNOTRESPOND)
+^C
